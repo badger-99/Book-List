@@ -44,6 +44,4 @@ bookEntry.addEventListener('submit', (e) => {
   })
 })
 
-// if (bookArray.length > 0) {
-// }
 
