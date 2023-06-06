@@ -3,7 +3,7 @@ const bookEntry = document.querySelector('#book-input')
 const title = document.querySelector('#title')
 const author = document.querySelector('#author')
 const addBtn = document.querySelector('#add')
-const bookArray = [];
+let bookArray = [];
 
 
 
@@ -17,31 +17,34 @@ const bookTamplate = (books, index) => `
 `;
 
 // ADD button event listener
-bookEntry.addEventListener('submit', (e) => {
-  e.preventDefault()
-  
-  // adding books to array
-  let book = {
-    title: '',
-    author: '',
-  };
-  book.title = title.value
-  book.author = author.value
-  bookArray.push(book)
-  console.log(bookArray);
-  
-  // Rendering the books
-  const bookList = bookArray.map((book, index) => bookTamplate(book, index)).join('')
-  container.innerHTML = bookList
+bookEntry
+  .addEventListener('submit', (e) => {
+    e.preventDefault();
 
+    // adding books to array
+    let book = {
+      title: '',
+      author: '',
+    };
+    book.title = title.value;
+    book.author = author.value;
+    bookArray.push(book);
+    console.log(bookArray);
+
+    // Rendering the book
+    const bookList = bookArray
+      .map((book, index) => bookTamplate(book, index))
+      .join('');
+    container.innerHTML = bookList;
+
+  })
+  
   // Remove button event listener
-  const removeBtns = document.querySelectorAll('.remove')
-  removeBtns.forEach((removeBtn, index) => {
-    removeBtn.addEventListener('click', (event) => {
-      const index = event.target.dataset.index
-      console.log(index)
+container.addEventListener('click', (event) => {
+  if (event.target.classList.contains('remove')) {
+    let bookNum = event.target.dataset.index;
+    bookArray.splice(parseInt(bookNum, 10), 1);
+    let newBookArray = bookArray.map((book, index) => bookTamplate(book, index)).join('');
+    container.innerHTML = newBookArray;      
+    }
   })
-  })
-})
-
-
