@@ -15,24 +15,21 @@ const bookTamplate = (books, index) => `
 
 // Saving to Local Storage
 const setStorage = () => {
-  const bookData = JSON.stringify(bookArray);
-  localStorage.setItem('bookData', bookData);
+  localStorage.setItem('bookData', JSON.stringify(bookArray));
 };
 
 // Getting from Local Storage
 const getStorage = () => {
-  const bookDataString = localStorage.getItem('bookData');
-  const retrievedBooks = JSON.parse(bookDataString);
+  const retrievedBooks = JSON.parse(localStorage.getItem('bookData'));
   return retrievedBooks;
 };
 
 // Showing books on browser
 const showBooks = () => {
   const retrievedBooks = getStorage();
-  const bookList = retrievedBooks
+  container.innerHTML = retrievedBooks
     .map((book, index) => bookTamplate(book, index))
     .join('');
-  container.innerHTML = bookList;
 };
 
 // Add book method
