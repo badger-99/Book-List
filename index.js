@@ -58,22 +58,8 @@ showBooks();
 bookEntry
   .addEventListener('submit', (e) => {
     e.preventDefault();
-
-    // adding books to array
-    const book = {
-      title: '',
-      author: '',
-    };
-    book.title = title.value;
-    book.author = author.value;
-    bookArray.push(book);
-    title.value = '';
-    author.value = '';
-
-    //  updating localStorage
-    setStorage();
-
-    //  Rendering the books
+    addBook()
+    bookEntry.reset()
     showBooks();
   });
 
@@ -81,12 +67,8 @@ bookEntry
 container.addEventListener('click', (event) => {
   if (event.target.classList.contains('remove')) {
     const bookNum = event.target.dataset.index;
-    bookArray.splice(parseInt(bookNum, 10), 1);
-
-    //  updating localStorage
-    setStorage();
-
-    //  Rendering the books
+    idx = parseInt(bookNum, 10)
+    removeBook(idx);
     showBooks();
   }
 });
