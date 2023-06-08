@@ -35,6 +35,22 @@ const showBooks = () => {
   container.innerHTML = bookList;
 };
 
+// Add book method
+function addBook() {
+  const book = {
+    title: title.value,
+    author: author.value,
+  }
+  bookArray.push(book)
+  setStorage()
+}
+
+// Remove book method
+function removeBook(idx) {
+  bookArray.splice(idx, 1)
+  setStorage();
+}
+
 bookArray.push(...getStorage());
 showBooks();
 
