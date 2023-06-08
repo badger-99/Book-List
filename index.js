@@ -35,6 +35,7 @@ const showBooks = () => {
   container.innerHTML = bookList;
 };
 
+bookArray.push(...getStorage());
 showBooks();
 
 // ADD button event listener
