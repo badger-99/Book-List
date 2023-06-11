@@ -3,3 +3,52 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+main {
+  max-width: 36rem;
+  position: relative;
+  margin: 15.625rem auto 0;
+}
+
+#heading {
+  text-align: center;
+}
+
+#book-list {
+  border: 2px solid green;
+  margin: 1rem 0;
+}
+
+.book {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.25rem;
+}
+
+.book:nth-child(even) {
+  background: rgb(206, 206, 206);
+}
+
+.remove {
+  padding: 0.25rem;
+}
+
+#book-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 50%;
+  margin: 2rem auto 0;
+  text-align: center;
+}
+
+input,
+#add {
+  padding: 0.25rem;
+}
+
+#add {
+  width: 3rem;
+  align-self: flex-end;
+}
