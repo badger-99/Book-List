@@ -1,55 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Book-List</title>
-</head>
-<body>
-  <header id="header">
-    <p>Awesome Books</p>
-    <ul>
-      <li><a href="#" id="list">List</a></li>
-      <li><a href="#" id="add-new">Add New</a></li>
-      <li><a href="#" id="contact">Contact</a></li>
-    </ul>
-  </header>
-  <div id="date"></div>
-  <main>
 
-    <div id="heading">
-      <h1 id="header-name">Awesome Books</h1>
-    </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/82d81c0b26.js" crossorigin="anonymous"></script>
+    <title>Book-List</title>
+  </head>
 
-    <section id="main-content">
-      <div id="book-list">
-        
-      </div>
-  
-      <div id="form-visibility" class="hidden">
-        <form id="book-form">
-          <input name="title" id="title" type="text" placeholder="Title" required>
-          <input name="author" id="author" type="text" placeholder="Author" required>
-          <button type="submit" id="add">Add</button>
-        </form>
+  <body>
+    <header id="header">
+      <p>Awesome Books</p>
+      <ul>
+        <li><a href="#" id="list">List</a></li>
+        <li><a href="#" id="add-new">Add New</a></li>
+        <li><a href="#" id="contact">Contact</a></li>
+      </ul>
+    </header>
+    <div id="date"></div>
+    <main>
+
+      <div id="heading">
+        <h1 id="header-name">Awesome Books</h1>
       </div>
 
-      <div id="contact-details" class="hidden">
-        <p>Do you have any questions or you just want to say "Hello"?</p>
-        <p>You can email me at alpeter91@gmail.com or connect with me at</p>
-        <div id="details">
-          <div id="linkedin">LinkedIn</div>
-          <div id="Twitter">Twitter</div>
-          <div id="GitHub">GitHub</div>
+      <section id="main-content">
+        <div id="book-list">
+
         </div>
-      </div>
-    </section>
-  </main>
-  <footer id="footer">
-    <p>Copyright 2023</p>
-  </footer>
-  <script src="./index.js"></script>
-</body>
+
+        <div id="form-visibility" class="hidden">
+          <form id="book-form">
+            <input name="title" id="title" type="text" placeholder="Title" required>
+            <input name="author" id="author" type="text" placeholder="Author" required>
+            <button type="submit" id="add">Add</button>
+          </form>
+        </div>
+
+        <div id="contact-details" class="hidden">
+          <p>Do you have any questions or you just want to say "Hello"?</p>
+          <p>You can email me at alpeter91@gmail.com or connect with me</p>
+          <div id="details">
+            <a href="" class="social-links">
+              <i class="fa-brands fa-linkedin-in fa-6x"></i>
+            </a>
+            <a href="" class="social-links">
+              <i class="fa-brands fa-twitter fa-6x"></i>
+            </a>
+            <a href="" class="social-links">
+              <i class="fa-brands fa-github fa-6x"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <p>Copyright 2023</p>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+
 </html>
