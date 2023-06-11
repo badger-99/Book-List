@@ -4,37 +4,37 @@
   box-sizing: border-box;
 }
 
-main{
+main {
   max-width: 36rem;
   position: relative;
   margin: 15.625rem auto 0;
 }
 
-#heading{
+#heading {
   text-align: center;
 }
 
-#book-list{
+#book-list {
   border: 2px solid green;
   margin: 1rem 0;
 }
 
-.book{
+.book {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 0.25rem;
 }
 
-.book:nth-child(even){
+.book:nth-child(even) {
   background: rgb(206, 206, 206);
 }
 
-.remove{
+.remove {
   padding: 0.25rem;
 }
 
-#book-input{
+#book-input {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -43,12 +43,12 @@ main{
   text-align: center;
 }
 
-input, #add{
+input,
+#add {
   padding: 0.25rem;
 }
 
-
-#add{
+#add {
   width: 3rem;
   align-self: flex-end;
 }
