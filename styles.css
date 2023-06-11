@@ -70,8 +70,21 @@ main {
   max-height: 15.7rem;
   overflow-y: scroll;
 }
+#contact-details{
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+}
 
-#contact-details {
+
+#details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: baseline;
+  gap: 3rem;
+  width: max-content;
+  margin: 2.54rem auto;
 }
 
 .book {
@@ -95,7 +108,7 @@ main {
   flex-direction: column;
   gap: 0.5rem;
   max-width: 50%;
-  margin: 4.65rem auto;
+  margin: 4.6rem auto;
   text-align: center;
 }
 
