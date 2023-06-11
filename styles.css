@@ -4,22 +4,74 @@
   box-sizing: border-box;
 }
 
-.hidden{
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  padding: 0 5rem;
+}
+
+.hidden {
   display: none;
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+#header,
+#header > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#header {
+  border: 1px solid red;
+  padding: 2.5rem 1rem 1rem;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+#header > ul {
+  gap: 1.5rem;
+}
+
+#date {
+  border: 1px solid green;
+  width: fit-content;
+  margin-left: auto;
+  padding: 0.5rem;
+}
+
 main {
   max-width: 36rem;
-  position: relative;
-  margin: 15.625rem auto 0;
+  margin: auto auto auto;
 }
 
 #heading {
+  width: fit-content;
+  margin: 6rem auto 4rem;
   text-align: center;
 }
 
-#book-list {
+#main-content {
   border: 2px solid green;
   margin: 1rem 0;
+  padding: 0.5rem;
+}
+
+#book-list {
+  max-height: 15.7rem;
+  overflow-y: scroll;
+}
+
+#contact-details {
 }
 
 .book {
@@ -37,12 +89,13 @@ main {
   padding: 0.25rem;
 }
 
-#book-input {
+#book-form {
+  border: 2px solid blue;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   max-width: 50%;
-  margin: 2rem auto 0;
+  margin: 4.65rem auto;
   text-align: center;
 }
 
@@ -54,4 +107,14 @@ input,
 #add {
   width: 3rem;
   align-self: flex-end;
+}
+
+#footer {
+  border: 1px solid purple;
+  padding: 1rem 1rem 2rem;
+  position: absolute;
+  bottom: 0;
+  width: 75%;
+  left: 12.5%;
+  text-align: center;
 }
