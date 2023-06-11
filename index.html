@@ -8,21 +8,43 @@
   <title>Book-List</title>
 </head>
 <body>
+  <header id="header">
+    <p>Awesome Books</p>
+    <ul>
+      <li><a href="#" id="list">List</a></li>
+      <li><a href="#" id="add-new">Add new</a></li>
+      <li><a href="#" id="contact">Contact</a></li>
+    </ul>
+  </header>
   <main>
+    <div id="date"></div>
+
     <div id="heading">
-      <h1>Awesome Books</h1>
+      <h1 id="header-name">Awesome Books</h1>
     </div>
 
-    <div id="book-list">
-      
-    </div>
+    <section id="main-content">
+      <div id="book-list">
+        
+      </div>
+  
+      <div id="form-visibility" class="hidden">
+        <form id="book-form">
+          <input name="title" id="title" type="text" placeholder="Title" required>
+          <input name="author" id="author" type="text" placeholder="Author" required>
+          <button type="submit" id="add">Add</button>
+        </form>
+      </div>
 
-    <form id="book-input">
-      <h1>Add a new book</h1>
-      <input name="title" id="title" type="text" placeholder="Title" required>
-      <input name="author" id="author" type="text" placeholder="Author" required>
-      <button type="submit" id="add">Add</button>
-    </form>
+      <div id="contact-details" class="hidden">
+        <p>Do you have any questions or you just want to say "Hello"?</p>
+        <p>You can reach me at one of these places</p>
+        <div id="details"></div>
+      </div>
+    </section>
+    <footer id="footer">
+      <p>Copyright 2023</p>
+    </footer>
   </main>
   <script src="./index.js"></script>
 </body>
