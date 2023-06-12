@@ -124,7 +124,7 @@ input {
   background: #ffead9;
 }
 
-input:focus{
+input:focus {
   outline: 3px solid #e78230;
 }
 
