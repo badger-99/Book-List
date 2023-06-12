@@ -6,7 +6,7 @@ const list = document.getElementById('list');
 const addNew = document.getElementById('add-new');
 const contact = document.getElementById('contact');
 const heading = document.getElementById('header-name');
-const dateDiv = document.getElementById('date')
+const dateDiv = document.getElementById('date');
 const title = document.querySelector('#title');
 const author = document.querySelector('#author');
 const bookArray = [];
@@ -81,7 +81,7 @@ list.addEventListener('click', (e) => {
   bookList.classList.remove('hidden');
   formVisibility.classList.add('hidden');
   contactDetails.classList.add('hidden');
-  heading.innerHTML = 'Awesome Books'
+  heading.innerHTML = 'Awesome Books';
 });
 
 addNew.addEventListener('click', (e) => {
@@ -101,19 +101,19 @@ contact.addEventListener('click', (e) => {
 });
 
 // Live clock
-const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
-const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
 const leadingZero = (number) => {
   if (number < 10) {
-    return `0${number}`
+    return `0${number}`;
   }
-  return number
-}
+  return number;
+};
 const liveClock = () => {
   const date = new Date();
   const time = `${weekdays[date.getDay()]} ${months[date.getMonth()]} ${leadingZero(date.getDate())} ${date.getFullYear()} ${leadingZero(date.getHours())}:${leadingZero(date.getMinutes())}:${leadingZero(date.getSeconds())}`;
-  dateDiv.innerHTML = time;  
+  dateDiv.innerHTML = time;
 };
 
-setInterval(liveClock, 1000)
+setInterval(liveClock, 1000);
