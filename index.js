@@ -89,7 +89,7 @@ addNew.addEventListener('click', (e) => {
   bookList.classList.add('hidden');
   formVisibility.classList.remove('hidden');
   contactDetails.classList.add('hidden');
-  heading.innerHTML = 'Add a new book';
+  heading.innerHTML = 'Add A New Book';
 });
 
 contact.addEventListener('click', (e) => {
@@ -97,7 +97,7 @@ contact.addEventListener('click', (e) => {
   bookList.classList.add('hidden');
   formVisibility.classList.add('hidden');
   contactDetails.classList.remove('hidden');
-  heading.innerHTML = 'Contact information';
+  heading.innerHTML = 'Contact Information';
 });
 
 // Live clock
