@@ -11,6 +11,7 @@ body {
   padding: 0 5rem;
   background: #353535;
   color: #fad0a3;
+  font-family: 'Quattrocento Sans', sans-serif;
 }
 
 .hidden {
@@ -38,6 +39,9 @@ li {
   padding: 2.5rem 0 1rem;
   max-width: 50rem;
   margin: 0 auto;
+  font-size: 1.5rem;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
 }
 
 #header > ul {
@@ -49,17 +53,23 @@ li {
   width: fit-content;
   margin: 0 auto;
   padding: 0.5rem;
+  letter-spacing: 0.05rem;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.1rem;
 }
 
 main {
   max-width: 36rem;
   margin: auto auto auto;
+  font-family: 'Nunito', sans-serif;
 }
 
 #heading {
   width: fit-content;
   margin: 6rem auto 4rem;
   text-align: center;
+  font-family: 'Quattrocento', serif;
+  font-size: 1.7rem;
 }
 
 #main-content {
@@ -128,6 +138,8 @@ input {
   width: 100%;
   text-align: center;
   padding: 1rem;
+  font-size: 1.1rem;
+  line-height: 2rem;
 }
 
 #details {
@@ -137,7 +149,7 @@ input {
   align-items: center;
   gap: 3rem;
   width: max-content;
-  margin: 3.5rem auto;
+  margin: 2.85rem auto;
 }
 
 .fa-brands {
@@ -156,4 +168,7 @@ input {
   width: 75%;
   left: 12.5%;
   text-align: center;
+  font-size: 1.2rem;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
 }
