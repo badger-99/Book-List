@@ -32,8 +32,8 @@ li {
 }
 
 #header {
-  border: 1px solid red;
-  padding: 2.5rem 1rem 1rem;
+  /* border: 1px solid red; */
+  padding: 2.5rem 0 1rem;
   max-width: 50rem;
   margin: 0 auto;
 }
@@ -45,7 +45,7 @@ li {
 #date {
   border: 1px solid green;
   width: fit-content;
-  margin-left: auto;
+  margin:0 auto;
   padding: 0.5rem;
 }
 
@@ -63,7 +63,7 @@ main {
 #main-content {
   border: 2px solid green;
   margin: 1rem 0;
-  padding: 0.5rem;
+  padding: 0.01rem;
 }
 
 #book-list {
@@ -91,7 +91,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0.25rem;
+  padding: 0.84rem;
 }
 
 .book:nth-child(even) {
