@@ -122,6 +122,10 @@ input {
   background: #ffead9;
 }
 
+input:focus{
+  outline: 3px solid #e78230;
+}
+
 #add {
   background: #ffc596;
   color: #353535;
