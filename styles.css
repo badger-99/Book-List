@@ -135,6 +135,14 @@ input{
   margin: 3.5rem auto;
 }
 
+.fa-brands {
+  transition: color 0.5s ease;
+}
+
+.fa-brands:hover {
+  color: #ef9347;
+}
+
 #footer {
   /* border: 1px solid purple; */
   padding: 1rem 1rem 2rem;
