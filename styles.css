@@ -8,7 +8,7 @@ body {
   position: relative;
   width: 100vw;
   height: 100vh;
-  padding: 0 5rem;
+  padding: 0 3rem;
   background: #353535;
   color: #fad0a3;
   font-family: 'Quattrocento Sans', sans-serif;
@@ -32,19 +32,21 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 #header {
   padding: 2.5rem 0 1rem;
-  max-width: 50rem;
+  max-width: 75rem;
   margin: 0 auto;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   letter-spacing: 0.05rem;
   font-weight: 700;
 }
 
 #header > ul {
   gap: 1.5rem;
+  font-size: 1.5rem;
 }
 
 #date {
