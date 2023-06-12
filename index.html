@@ -1,29 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Book-List</title>
-</head>
-<body>
-  <main>
-    <div id="heading">
-      <h1>Awesome Books</h1>
-    </div>
 
-    <div id="book-list">
-      
-    </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/82d81c0b26.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Quattrocento+Sans:wght@400;700&family=Quattrocento:wght@700&family=Quicksand:wght@600&display=swap"
+      rel="stylesheet">
+    <title>Book-List</title>
+  </head>
 
-    <form id="book-input">
-      <h1>Add a new book</h1>
-      <input name="title" id="title" type="text" placeholder="Title" required>
-      <input name="author" id="author" type="text" placeholder="Author" required>
-      <button type="submit" id="add">Add</button>
-    </form>
-  </main>
-  <script src="./index.js"></script>
-</body>
+  <body>
+    <header id="header">
+      <h3><i class="fa-solid fa-book-open"></i> Awesome Books</h3>
+      <ul>
+        <li><a href="#" id="list">List</a></li>
+        <li><a href="#" id="add-new">Add new</a></li>
+        <li><a href="#" id="contact">Contact</a></li>
+      </ul>
+    </header>
+    <div id="date"></div>
+    <main>
+
+      <div id="heading">
+        <h1 id="header-name">Awesome Books</h1>
+      </div>
+
+      <section id="main-content">
+        <div id="book-list">
+
+        </div>
+
+        <div id="form-visibility" class="hidden">
+          <form id="book-form">
+            <input name="title" id="title" type="text" placeholder="Title" required>
+            <input name="author" id="author" type="text" placeholder="Author" required>
+            <button type="submit" id="add">Add</button>
+          </form>
+        </div>
+
+        <div id="contact-details" class="hidden">
+          <p>Do you have any questions or you just want to say "Hello"?</p>
+          <p>Let's connect!</p>
+          <div id="details">
+            <a href="https://www.linkedin.com/in/alpeter91-7b41a0270/" class="social-links" target="_blank">
+              <i class="fa-brands fa-linkedin-in fa-5x"></i>
+            </a>
+            <a href="https://twitter.com/alpeter91" class="social-links" target="_blank">
+              <i class="fa-brands fa-twitter fa-5x"></i>
+            </a>
+            <a href="https://github.com/badger-99" class="social-links" target="_blank">
+              <i class="fa-brands fa-github fa-5x"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <p>Copyright <i class="fa-regular fa-copyright"></i>2023</p>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+
 </html>
