@@ -47,7 +47,7 @@ li {
 #date {
   /* border: 1px solid green; */
   width: fit-content;
-  margin:0 auto;
+  margin: 0 auto;
   padding: 0.5rem;
 }
 
@@ -66,7 +66,7 @@ main {
   /* border: 2px solid green; */
   margin: 1rem 0;
   padding: 0.01rem;
-  background: #664A32;
+  background: #664a32;
   border-radius: 0.75rem;
 }
 
@@ -88,7 +88,11 @@ main {
 }
 
 .remove {
-  padding: 0.25rem;
+  padding: 0.38rem;
+  background: #e3883e;
+  border: none;
+  border-radius: 0.5rem;
+  color: #353535;
 }
 
 #book-form {
@@ -108,12 +112,13 @@ input,
   padding: 0.5rem;
 }
 
-input{
-  background: #FFEAD9;
+input {
+  background: #ffead9;
 }
 
 #add {
-  background:  #ffc596;
+  background: #ffc596;
+  color: #353535;
   width: 5rem;
   align-self: center;
 }
